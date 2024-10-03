@@ -4,6 +4,38 @@
 
 这是我的第一个github仓库，我使用该仓库来熟悉github的工作流，尝试github的一些功能。在学习过程中会记录一些github的使用技巧。
 
+## Github项目常见的文件
+
+### README.md 项目介绍文件
+
+常用于介绍项目，包括项目用途、使用说明、安装手册、开源协议、版权声明等。用markdown语言编写，一般命名为README.md或者README。
+
+每个文件夹的README.md文件，当在Github中访问对应的目录时，会直接展示，
+
+如：
+
+- 该项目中的根目录的README.md，可以通过 <https://github.com/yansheng836/hello-world> 直接访问；
+- 该项目中的docs目录的README.md，可以通过 <https://github.com/yansheng836/hello-world/tree/master/docs> 直接访问。
+
+---
+
+在Github中创建新项目时可以选择是否为项目自动生成一个README.md文件，相关介绍详见文档：
+
+- 英文版：<https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes>
+- 中文版：<https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes>
+
+![image-20241003173325285](README.assets/image-20241003173325285.png)
+
+## .gitignore 文件
+
+
+
+
+
+
+
+
+
 ---
 ## 各种语言的Hello World程序
 
