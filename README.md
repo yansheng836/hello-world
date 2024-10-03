@@ -100,3 +100,17 @@ GitHub 词汇表:<https://help.github.com/cn/articles/github-glossary>
 
 <https://docsify.js.org/#/zh-cn/>
 
+## Git删除大文件
+
+https://www.cnblogs.com/anhiao/p/16964976.html
+
+https://help.aliyun.com/document_detail/206833.html
+
+https://www.jianshu.com/p/03bf1bc1b543
+
+https://www.zhangshengrong.com/p/281ompjDNw/
+
+https://www.cnblogs.com/bigmango/p/11361344.html
+
+
+
