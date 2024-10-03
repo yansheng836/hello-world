@@ -2,9 +2,11 @@
 
 [中文说明](https://github.com/yansheng836/hello-world/blob/master/README.md)  [English](https://github.com/yansheng836/hello-world/blob/master/README-en.md)
 
-这是我的第一个github仓库，我使用该仓库来熟悉github的工作流，尝试github的一些功能。在学习过程中会记录一些github的使用技巧。
+这是我的第一个Github仓库，我使用该仓库来熟悉Github的工作流，尝试Github的一些功能。在学习过程中会记录一些Github的使用技巧。
 
 ## 各种语言的Hello World程序
+
+既然是学习，必然少不了hello world。
 
 来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)。
 
@@ -16,7 +18,11 @@
 
 用markdown语言编写，一般命名为README.md或者README。
 
-参考：https://github.com/yansheng836/hello-world?tab=readme-ov-file
+Markdown 官方教程：https://markdown.com.cn/
+
+CSDN编辑器中的介绍（可作为学习语法的参考）：https://github.com/yansheng836/hello-world/blob/master/CSDN-use-md-introduction.md
+
+参考效果：https://github.com/yansheng836/hello-world?tab=readme-ov-file
 
 具体文件：https://github.com/yansheng836/hello-world/blob/master/README.md
 
@@ -61,7 +67,7 @@
 
 一般命名为LICENSE、LICENSE.txt 、LICENSE.md、LICENSE.rst。
 
-参考：https://github.com/yansheng836/hello-world?tab=MIT-1-ov-file#readme
+参考效果：https://github.com/yansheng836/hello-world?tab=MIT-1-ov-file#readme
 
 具体文件：https://github.com/yansheng836/hello-world/blob/master/LICENSE
 
@@ -148,7 +154,7 @@ github技巧推荐：
 
 如果你想要参与项目的贡献，就需要遵守项目所有者设置的一些约定，用于维护社区的和谐、稳定发展。（就比如你入职了某个公司，就需要遵守公司的各种规章制度。）
 
-参考：https://github.com/yansheng836/hello-world?tab=coc-ov-file
+参考效果：https://github.com/yansheng836/hello-world?tab=coc-ov-file
 
 具体文件：https://github.com/yansheng836/hello-world/blob/master/code-of-conduct.md
 
