@@ -4,6 +4,10 @@
 
 这是我的第一个github仓库，我使用该仓库来熟悉github的工作流，尝试github的一些功能。在学习过程中会记录一些github的使用技巧。
 
+## 各种语言的Hello World程序
+
+来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)。
+
 ## Github项目常见的文件
 
 ### README.md 项目介绍文件
@@ -36,7 +40,7 @@
 
 ### .gitignore git忽略文件
 
-该文件是属于git系统的配置文件，用于忽略一些生成行或者是不关心的文件，比如：C语言项目生成的exe文件等二进制文件。
+该文件是属于git系统的配置文件，用于忽略一些生成的或者是冗余的、不关心的文件，比如：Mac系统中的.DS_Store、C语言项目生成的exe、obj、dll文件等文件。
 
 .gitignore是存文本文件，其中#用于注释。使用git时，可以通过命令：`git status --ignored` 查看到忽略的文件。
 
@@ -229,10 +233,6 @@ GitHub Pages旨在从GitHub存储库中托管您的个人，组织或项目页�
 > 一个神奇的文档网站生成器。
 
 <https://docsify.js.org/#/zh-cn/>
-
-## 各种语言的Hello World程序
-
-来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)
 
 ## Code of Conduct
 
