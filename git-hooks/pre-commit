@@ -1,7 +1,8 @@
 #!/bin/sh
 echo '提交前执行...'
-# 自动将Github page内容同步到docs文件夹
-cp .git/hooks/pre-commit ./git-hooks/
+#自动将Github page内容同步到docs文件夹
+#cp .git/hooks/pre-commit ./git-hooks/
+find .git/hooks | grep -v .sample | grep hooks/ | xargs -i cp {} ./git-hooks
 git add ./git-hooks/*
 
 cp README.md ./docs/README.md
