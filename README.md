@@ -44,18 +44,16 @@
 
 ---
 
-在Github中创建新项目时可以选择是否为项目自动生成一个.gitignore文件，选择项目所属语言后，会生成一个改语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
+在Github中创建新项目时可以选择是否为项目自动生成一个.gitignore文件，选择项目所属语言后，会生成一个该语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
 
 - 英文版：<https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files>
 - 中文版：<https://docs.github.com/zh/get-started/getting-started-with-git/ignoring-files>
 
 ![image-20241003173325285](README.assets/image-20241003173325285.png)
 
-
-
 ### LICENSE.txt 开源许可证文件
 
-开源许可，以何种许可进行开源。
+开源许可，表明项目以何种许可进行开源。
 
 一般命名为LICENSE、LICENSE.txt 、LICENSE.md、LICENSE.rst。
 
@@ -80,7 +78,7 @@
 
 CLA，即：Contributor License Agreement 贡献者许可协议。除了开源协议的约束，一些大公司的项目，为了避免各种纠纷会有一些内容的协议，你需要认可并签署对应的协议才能参与项目的贡献。
 
-可参考阿里巴巴的p3c项目的这个pr的内容：https://github.com/alibaba/p3c/pull/975，对应协议内容：https://cla-assistant.io/alibaba/p3c?pullRequest=975。
+可参考阿里巴巴的p3c项目的这个pr的内容：<https://github.com/alibaba/p3c/pull/975>，对应协议内容：<https://cla-assistant.io/alibaba/p3c?pullRequest=975>。
 
 ### .gitattributes Github纠正项目语言显示
 
@@ -144,7 +142,7 @@ github技巧推荐：
 
 ### code-of-conduct.md 贡献者公约(行为准则)
 
-如果你想要参与项目的贡献，就需要遵守项目设置的一些约定。
+如果你想要参与项目的贡献，就需要遵守项目所有者设置的一些约定，用于维护社区的和谐、稳定发展。（就比如你入职了某个公司，就需要遵守公司的各种规章制度。）
 
 参考：https://github.com/yansheng836/hello-world?tab=coc-ov-file
 
@@ -170,9 +168,9 @@ github-git-cheat-sheet：
 - 英文版：https://training.github.com/downloads/github-git-cheat-sheet/
 - 中文版：https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/
 
-git-cheatsheet 可视化Git教程（交互式备忘单，可视化git：https://github.com/ndp/git-cheatsheet）：
+git-cheatsheet 可视化Git教程（交互式备忘单，可视化git：<https://github.com/ndp/git-cheatsheet>）：
 
-- 英文版：http://ndpsoftware.com/git-cheatsheet.html#loc=index;
+- 英文版：<http://ndpsoftware.com/git-cheatsheet.html#loc=index;>
 
 ![image-20241003210438988](README.assets/image-20241003210438988.png)
 
@@ -186,25 +184,45 @@ https://git-scm.com/book/en/v2
 
 https://git-scm.com/book/zh/v2
 
-### Git删除大文件
+### Git删除大文件 git-filter-repo工具
 
-https://www.cnblogs.com/anhiao/p/16964976.html
+使用场景：一开始因为没有添加gitignore文件忽略一些文件，导致git添加了一个很大的备份文件；发现时，用gitignore进行了忽略，但是这个忽略规则只对后续的文件生效；于是删除了仓库中的旧的备份文件，但是发现仓库大小仍没有变化，因为它并没有删除历史仓库中的该备份文件。虽然使用git也能将历史文件进行删除，但是操作比较繁琐，因此该工具粉墨登场！
 
-https://help.aliyun.com/document_detail/206833.html
+git-filter-repo：Quickly rewrite git repository history (filter-branch replacement)：<https://github.com/newren/git-filter-repo/>
 
-https://www.jianshu.com/p/03bf1bc1b543
+---
 
-https://www.zhangshengrong.com/p/281ompjDNw/
+参考文章：
 
-https://www.cnblogs.com/bigmango/p/11361344.html
+Git如何清理大文件：<https://www.cnblogs.com/anhiao/p/16964976.html>
+
+git-filter-repo：<https://help.aliyun.com/document_detail/206833.html>
+
+用 git filter-repo 彻底删除Git中的大文件：<https://www.jianshu.com/p/03bf1bc1b543>
+
+Git如何删除历史记录中的大文件详解：<https://www.zhangshengrong.com/p/281ompjDNw/>
+
+git 仓库中删除历史大文件：<https://www.cnblogs.com/bigmango/p/11361344.html>
 
 ## Github工具
 
 ### Github pages
 
-2019年7月22日11:07:27 添加 
+GitHub Pages旨在从GitHub存储库中托管您的个人，组织或项目页面。
 
-[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
+（网上有很多教程利用这个功能搭建个人博客网站，访问地址为：<https://user.github.io/repo/>。）
+
+将Github项目中的文档发布成网站，可指定对应分支、目录、主题等。
+
+配置文档：
+
+- 英文版：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+- 中文版：https://docs.github.com/zh/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+---
+
+2019年7月22日11:07:27 添加：[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
 
 ### docsify
 
@@ -220,7 +238,7 @@ https://www.cnblogs.com/bigmango/p/11361344.html
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 
-如果你想要参与贡献必要准遵守我们的[行为准则](code-of-conduct.md)；如果你发现有人违反该准则，可以通过[我的邮箱](yansheng0063@163.com)联系我。
+如果你想要参与贡献必要准遵守我们的 [行为准则](code-of-conduct.md) ；如果你发现有人违反该准则，可以通过 [我的邮箱](yansheng0063@163.com) 联系我。
 
 ## Contributing
 
