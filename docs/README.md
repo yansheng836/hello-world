@@ -4,34 +4,83 @@
 
 这是我的第一个github仓库，我使用该仓库来熟悉github的工作流，尝试github的一些功能。在学习过程中会记录一些github的使用技巧。
 
+## Github项目常见的文件
+
+### README.md 项目介绍文件
+
+常用于介绍项目，包括项目用途、使用说明、安装手册、开源协议、版权声明等。
+
+用markdown语言编写，一般命名为README.md或者README。
+
+参考：https://github.com/yansheng836/hello-world?tab=readme-ov-file
+
+具体文件：https://github.com/yansheng836/hello-world/blob/master/README.md
+
 ---
-## 各种语言的Hello World程序
 
-来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)
+每个文件夹的README.md文件，当在Github中访问对应的目录时，会直接展示，
 
-## Code of Conduct
+如：
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+- 该项目中的根目录的README.md，可以通过 <https://github.com/yansheng836/hello-world> 直接访问；
+- 该项目中的docs目录的README.md，可以通过 <https://github.com/yansheng836/hello-world/tree/master/docs> 直接访问。
 
-如果你想要参与贡献必要准遵守我们的[行为准则](code-of-conduct.md)；如果你发现有人违反该准则，可以通过[我的邮箱](yansheng0063@163.com)联系我。
+---
 
-## Contributing
+在Github中创建新项目时可以选择是否为项目自动生成一个README.md文件，相关介绍详见文档：
 
-Our goal is for this project to reflect community best practices, so we'd love your input! Got a question or an idea? Check out our [contributing guidelines](CONTRIBUTING.md) for ways to offer feedback and contribute.
+- 英文版：<https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes>
+- 中文版：<https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes>
 
-## License
+![image-20241003173325285](README.assets/image-20241003173325285.png)
 
-<div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/hello-world.svg"/></div>
+### .gitignore git忽略文件
 
-This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/hello-world/blob/master/LICENSE).
+该文件是属于git系统的配置文件，用于忽略一些生成行或者是不关心的文件，比如：C语言项目生成的exe文件等二进制文件。
 
-## Github pages
+.gitignore是存文本文件，其中#用于注释。使用git时，可以通过命令：`git status --ignored` 查看到忽略的文件。
 
-2019年7月22日11:07:27 添加 
+具体文件：https://github.com/yansheng836/hello-world/blob/master/.gitignore
 
-[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
+---
 
-## .gitattributes--纠正项目语言显示
+在Github中创建新项目时可以选择是否为项目自动生成一个.gitignore文件，选择项目所属语言后，会生成一个该语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
+
+- 英文版：<https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files>
+- 中文版：<https://docs.github.com/zh/get-started/getting-started-with-git/ignoring-files>
+
+![image-20241003173325285](README.assets/image-20241003173325285.png)
+
+### LICENSE.txt 开源许可证文件
+
+开源许可，表明项目以何种许可进行开源。
+
+一般命名为LICENSE、LICENSE.txt 、LICENSE.md、LICENSE.rst。
+
+参考：https://github.com/yansheng836/hello-world?tab=MIT-1-ov-file#readme
+
+具体文件：https://github.com/yansheng836/hello-world/blob/master/LICENSE
+
+常见开源许可证选择图，参考文章：[可供选择的软件开源协议的罗列](https://zhuanlan.zhihu.com/p/519929236)
+
+![img](README.assets/v2-0e8d88d49c2832f0c0bdc73d13ff6ac6_720w.webp)
+
+---
+
+在Github中创建新项目时可以选择是否为项目自动生成一个LICENSE文件，选择项目所属语言后，会生成一个改语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
+
+- 英文版：<https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository>
+- 中文版：<https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository>
+
+![image-20241003173325285](README.assets/image-20241003173325285.png)
+
+#### 扩展：CLA 贡献者许可协议
+
+CLA，即：Contributor License Agreement 贡献者许可协议。除了开源协议的约束，一些大公司的项目，为了避免各种纠纷会有一些内容的协议，你需要认可并签署对应的协议才能参与项目的贡献。
+
+可参考阿里巴巴的p3c项目的这个pr的内容：<https://github.com/alibaba/p3c/pull/975>，对应协议内容：<https://cla-assistant.io/alibaba/p3c?pullRequest=975>。
+
+### .gitattributes Github纠正项目语言显示
 
 自动统计语言，将最多的语言作为该项目的语言（即个人仓库列表中显示的语言），这是github的一个特点，gitee就没有。
 
@@ -79,23 +128,131 @@ This software is licensed under the MIT License. [View the license](https://gith
 >
 >2. Add the following lines to the `.gitattributes` file:
 >
->   ```
->   /BibliotecaGames.Entities/* linguist-vendored=true
->   /BibliotecaGames.BLL/* linguist-vendored=true
->   ```
+>  ```
+>  /BibliotecaGames.Entities/* linguist-vendored=true
+>  /BibliotecaGames.BLL/* linguist-vendored=true
+>  ```
 >
 >3. Modify a file in your project to force GitHub to detect the new `.gitattributes` file
 
 
 github技巧推荐：
 
-- <https://blog.csdn.net/u012702547/article/details/99543925>
 - <https://www.cnblogs.com/iamzhanglei/p/6177961.html>
 
-GitHub 词汇表:<https://help.github.com/cn/articles/github-glossary>
+### code-of-conduct.md 贡献者公约(行为准则)
 
-## docsify
+如果你想要参与项目的贡献，就需要遵守项目所有者设置的一些约定，用于维护社区的和谐、稳定发展。（就比如你入职了某个公司，就需要遵守公司的各种规章制度。）
+
+参考：https://github.com/yansheng836/hello-world?tab=coc-ov-file
+
+具体文件：https://github.com/yansheng836/hello-world/blob/master/code-of-conduct.md
+
+ [Contributor Covenant](https://www.contributor-covenant.org/) 2.1 版：
+
+- 英文版：https://www.contributor-covenant.org/version/2/1/code_of_conduct/
+- 中文版：https://www.contributor-covenant.org/zh-cn/version/2/1/code_of_conduct/
+
+## Git工具
+
+### Git官网
+
+https://git-scm.com/
+
+#### Git文档
+
+文档：https://git-scm.com/docs
+
+github-git-cheat-sheet：
+
+- 英文版：https://training.github.com/downloads/github-git-cheat-sheet/
+- 中文版：https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/
+
+git-cheatsheet 可视化Git教程（交互式备忘单，可视化git：<https://github.com/ndp/git-cheatsheet>）：
+
+- 英文版：<http://ndpsoftware.com/git-cheatsheet.html#loc=index;>
+
+![image-20241003210438988](README.assets/image-20241003210438988.png)
+
+#### Pro Git book 英文版
+
+一本比较好的学习Git的书籍。
+
+https://git-scm.com/book/en/v2
+
+#### Pro Git book 中文版
+
+https://git-scm.com/book/zh/v2
+
+### Git删除大文件 git-filter-repo工具
+
+使用场景：一开始因为没有添加gitignore文件忽略一些文件，导致git添加了一个很大的备份文件；发现时，用gitignore进行了忽略，但是这个忽略规则只对后续的文件生效；于是删除了仓库中的旧的备份文件，但是发现仓库大小仍没有变化，因为它并没有删除历史仓库中的该备份文件。虽然使用git也能将历史文件进行删除，但是操作比较繁琐，因此该工具粉墨登场！
+
+git-filter-repo：Quickly rewrite git repository history (filter-branch replacement)：<https://github.com/newren/git-filter-repo/>
+
+---
+
+参考文章：
+
+Git如何清理大文件：<https://www.cnblogs.com/anhiao/p/16964976.html>
+
+git-filter-repo：<https://help.aliyun.com/document_detail/206833.html>
+
+用 git filter-repo 彻底删除Git中的大文件：<https://www.jianshu.com/p/03bf1bc1b543>
+
+Git如何删除历史记录中的大文件详解：<https://www.zhangshengrong.com/p/281ompjDNw/>
+
+git 仓库中删除历史大文件：<https://www.cnblogs.com/bigmango/p/11361344.html>
+
+## Github工具
+
+### Github pages
+
+GitHub Pages旨在从GitHub存储库中托管您的个人，组织或项目页面。
+
+（网上有很多教程利用这个功能搭建个人博客网站，访问地址为：<https://user.github.io/repo/>。）
+
+将Github项目中的文档发布成网站，可指定对应分支、目录、主题等。
+
+配置文档：
+
+- 英文版：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+- 中文版：https://docs.github.com/zh/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+---
+
+2019年7月22日11:07:27 添加：[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
+
+### docsify
 
 > 一个神奇的文档网站生成器。
 
 <https://docsify.js.org/#/zh-cn/>
+
+## 各种语言的Hello World程序
+
+来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)
+
+## Code of Conduct
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+
+如果你想要参与贡献必要准遵守我们的 [行为准则](code-of-conduct.md) ；如果你发现有人违反该准则，可以通过 [我的邮箱](yansheng0063@163.com) 联系我。
+
+## Contributing
+
+Our goal is for this project to reflect community best practices, so we'd love your input! Got a question or an idea? Check out our [contributing guidelines](CONTRIBUTING.md) for ways to offer feedback and contribute.
+
+## License
+
+<div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/hello-world.svg"/></div>
+
+This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/hello-world/blob/master/LICENSE).
+
+
+
+
+
+
+
