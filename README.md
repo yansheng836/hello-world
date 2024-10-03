@@ -10,6 +10,12 @@
 
 常用于介绍项目，包括项目用途、使用说明、安装手册、开源协议、版权声明等。用markdown语言编写，一般命名为README.md或者README。
 
+参考：https://github.com/yansheng836/hello-world?tab=readme-ov-file
+
+具体文件：https://github.com/yansheng836/hello-world/blob/master/README.md
+
+---
+
 每个文件夹的README.md文件，当在Github中访问对应的目录时，会直接展示，
 
 如：
@@ -26,44 +32,49 @@
 
 ![image-20241003173325285](README.assets/image-20241003173325285.png)
 
-## .gitignore 文件
+### .gitignore git忽略文件
 
+该文件是属于git系统的配置文件，用于忽略一些生成行或者是不关心的文件，比如：C语言项目生成的exe文件等二进制文件。
 
+.gitignore是存文本文件，其中#用于注释。使用git时，可以通过命令：`git status --ignored` 查看到忽略的文件。
 
-
-
-
-
-
+具体文件：https://github.com/yansheng836/hello-world/blob/master/.gitignore
 
 ---
-## 各种语言的Hello World程序
 
-来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)
+在Github中创建新项目时可以选择是否为项目自动生成一个.gitignore文件，选择项目所属语言后，会生成一个改语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
 
-## Code of Conduct
+- 英文版：<https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files>
+- 中文版：<https://docs.github.com/zh/get-started/getting-started-with-git/ignoring-files>
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+![image-20241003173325285](README.assets/image-20241003173325285.png)
 
-如果你想要参与贡献必要准遵守我们的[行为准则](code-of-conduct.md)；如果你发现有人违反该准则，可以通过[我的邮箱](yansheng0063@163.com)联系我。
 
-## Contributing
 
-Our goal is for this project to reflect community best practices, so we'd love your input! Got a question or an idea? Check out our [contributing guidelines](CONTRIBUTING.md) for ways to offer feedback and contribute.
+### LICENSE 开源许可文件
 
-## License
+开源许可，以何种许可进行开源。
 
-<div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/hello-world.svg"/></div>
+一般命名为LICENSE、LICENSE.txt 、LICENSE.md、LICENSE.rst。
 
-This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/hello-world/blob/master/LICENSE).
+参考：https://github.com/yansheng836/hello-world?tab=MIT-1-ov-file#readme
 
-## Github pages
+具体文件：https://github.com/yansheng836/hello-world/blob/master/LICENSE
 
-2019年7月22日11:07:27 添加 
+常见开源许可证选择图，参考文章：[可供选择的软件开源协议的罗列](https://zhuanlan.zhihu.com/p/519929236)
 
-[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
+![img](README.assets/v2-0e8d88d49c2832f0c0bdc73d13ff6ac6_720w.webp)
 
-## .gitattributes--纠正项目语言显示
+---
+
+在Github中创建新项目时可以选择是否为项目自动生成一个LICENSE文件，选择项目所属语言后，会生成一个改语言常用的忽略模板配置文件，具体语言的忽略模板详见：<https://github.com/github/gitignore>，相关介绍详见文档：
+
+- 英文版：<https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository>
+- 中文版：<https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository>
+
+![image-20241003173325285](README.assets/image-20241003173325285.png)
+
+### .gitattributes Github纠正项目语言显示
 
 自动统计语言，将最多的语言作为该项目的语言（即个人仓库列表中显示的语言），这是github的一个特点，gitee就没有。
 
@@ -111,28 +122,23 @@ This software is licensed under the MIT License. [View the license](https://gith
 >
 >2. Add the following lines to the `.gitattributes` file:
 >
->   ```
->   /BibliotecaGames.Entities/* linguist-vendored=true
->   /BibliotecaGames.BLL/* linguist-vendored=true
->   ```
+>  ```
+>  /BibliotecaGames.Entities/* linguist-vendored=true
+>  /BibliotecaGames.BLL/* linguist-vendored=true
+>  ```
 >
 >3. Modify a file in your project to force GitHub to detect the new `.gitattributes` file
 
 
 github技巧推荐：
 
-- <https://blog.csdn.net/u012702547/article/details/99543925>
 - <https://www.cnblogs.com/iamzhanglei/p/6177961.html>
 
-GitHub 词汇表:<https://help.github.com/cn/articles/github-glossary>
 
-## docsify
 
-> 一个神奇的文档网站生成器。
+## Git工具
 
-<https://docsify.js.org/#/zh-cn/>
-
-## Git删除大文件
+### Git删除大文件
 
 https://www.cnblogs.com/anhiao/p/16964976.html
 
@@ -143,6 +149,44 @@ https://www.jianshu.com/p/03bf1bc1b543
 https://www.zhangshengrong.com/p/281ompjDNw/
 
 https://www.cnblogs.com/bigmango/p/11361344.html
+
+## Github工具
+
+### Github pages
+
+2019年7月22日11:07:27 添加 
+
+[https://yansheng836.github.io/hello-world/](https://yansheng836.github.io/hello-world/)
+
+### docsify
+
+> 一个神奇的文档网站生成器。
+
+<https://docsify.js.org/#/zh-cn/>
+
+## 各种语言的Hello World程序
+
+来源：[24种编程语言的Hello World程序](https://www.runoob.com/w3cnote/hello-world-programs-of-24-programing-language.html)，详见：[HelloWorld-all文件夹](https://github.com/yansheng836/hello-world/blob/master/HelloWorld-all)
+
+## Code of Conduct
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+
+如果你想要参与贡献必要准遵守我们的[行为准则](code-of-conduct.md)；如果你发现有人违反该准则，可以通过[我的邮箱](yansheng0063@163.com)联系我。
+
+## Contributing
+
+Our goal is for this project to reflect community best practices, so we'd love your input! Got a question or an idea? Check out our [contributing guidelines](CONTRIBUTING.md) for ways to offer feedback and contribute.
+
+## License
+
+<div style="text-align:left"><img src="https://img.shields.io/github/license/yansheng836/hello-world.svg"/></div>
+
+This software is licensed under the MIT License. [View the license](https://github.com/yansheng836/hello-world/blob/master/LICENSE).
+
+
+
+
 
 
 
