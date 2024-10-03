@@ -8,7 +8,9 @@
 
 ### README.md 项目介绍文件
 
-常用于介绍项目，包括项目用途、使用说明、安装手册、开源协议、版权声明等。用markdown语言编写，一般命名为README.md或者README。
+常用于介绍项目，包括项目用途、使用说明、安装手册、开源协议、版权声明等。
+
+用markdown语言编写，一般命名为README.md或者README。
 
 参考：https://github.com/yansheng836/hello-world?tab=readme-ov-file
 
@@ -51,7 +53,7 @@
 
 
 
-### LICENSE 开源许可文件
+### LICENSE.txt 开源许可证文件
 
 开源许可，以何种许可进行开源。
 
@@ -73,6 +75,12 @@
 - 中文版：<https://docs.github.com/zh/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository>
 
 ![image-20241003173325285](README.assets/image-20241003173325285.png)
+
+#### 扩展：CLA 贡献者许可协议
+
+CLA，即：Contributor License Agreement 贡献者许可协议。除了开源协议的约束，一些大公司的项目，为了避免各种纠纷会有一些内容的协议，你需要认可并签署对应的协议才能参与项目的贡献。
+
+可参考阿里巴巴的p3c项目的这个pr的内容：https://github.com/alibaba/p3c/pull/975，对应协议内容：https://cla-assistant.io/alibaba/p3c?pullRequest=975。
 
 ### .gitattributes Github纠正项目语言显示
 
@@ -134,9 +142,49 @@ github技巧推荐：
 
 - <https://www.cnblogs.com/iamzhanglei/p/6177961.html>
 
+### code-of-conduct.md 贡献者公约(行为准则)
 
+如果你想要参与项目的贡献，就需要遵守项目设置的一些约定。
+
+参考：https://github.com/yansheng836/hello-world?tab=coc-ov-file
+
+具体文件：https://github.com/yansheng836/hello-world/blob/master/code-of-conduct.md
+
+ [Contributor Covenant](https://www.contributor-covenant.org/) 2.1 版：
+
+- 英文版：https://www.contributor-covenant.org/version/2/1/code_of_conduct/
+- 中文版：https://www.contributor-covenant.org/zh-cn/version/2/1/code_of_conduct/
 
 ## Git工具
+
+### Git官网
+
+https://git-scm.com/
+
+#### Git文档
+
+文档：https://git-scm.com/docs
+
+github-git-cheat-sheet：
+
+- 英文版：https://training.github.com/downloads/github-git-cheat-sheet/
+- 中文版：https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/
+
+git-cheatsheet 可视化Git教程（交互式备忘单，可视化git：https://github.com/ndp/git-cheatsheet）：
+
+- 英文版：http://ndpsoftware.com/git-cheatsheet.html#loc=index;
+
+![image-20241003210438988](README.assets/image-20241003210438988.png)
+
+#### Pro Git book 英文版
+
+一本比较好的学习Git的书籍。
+
+https://git-scm.com/book/en/v2
+
+#### Pro Git book 中文版
+
+https://git-scm.com/book/zh/v2
 
 ### Git删除大文件
 
