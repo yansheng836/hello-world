@@ -1,0 +1,10 @@
+#!/bin/sh
+echo '提交前执行...'
+# 自动将Github page内容同步到docs文件夹
+cp .git/hooks/pre-commit ./git-hooks/
+git add ./git-hooks/*
+
+cp README.md ./docs/README.md
+cp -r README.assets ./docs/
+git add ./docs/*
+echo '复制文件完成！'
